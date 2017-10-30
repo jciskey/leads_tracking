@@ -1,0 +1,16 @@
+Leads Tracking
+==============
+
+A simple tool to scrape leads from various websites, store
+them in a local database, and present them to a user for review.
+
+Dependencies
+------------
+
+```praw
+psycopg2```
+
+License
+-------
+
+MIT
