@@ -9,6 +9,7 @@ chardet==3.0.4            # via requests
 idna==2.6                 # via requests
 praw==5.2.0
 prawcore==0.12.0          # via praw
+psycopg2==2.7.3.2
 requests==2.18.4          # via prawcore, update-checker
 update-checker==0.16      # via praw
 urllib3==1.22             # via requests
