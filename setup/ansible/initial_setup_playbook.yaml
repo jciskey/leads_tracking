@@ -1,0 +1,38 @@
+---
+
+- hosts: all
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+      become: yes
+
+    - name: Install packages
+      apt:
+        name: {{item}}
+        state: installed
+      with_items:
+        - postgresql
+        - libpq-dev
+      become: yes
+
+
+- hosts: all
+  tasks:
+    - name: Setup leads_tracking database in Postgres
+      postgresql_db:
+        name: leads_tracking
+        state: present
+      become_user: postgres
+
+    - name: Setup leads_tracking user in Postgres
+      postgresql_user:
+        db: leads_tracking
+        name: leads_user
+        password: leads_tracking_user_pwd
+        priv: "ALL/ALL:ALL"
+        state: present
+      become_user: postgres
+
+...
