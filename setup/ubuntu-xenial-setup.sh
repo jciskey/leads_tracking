@@ -21,3 +21,6 @@ sudo apt-get install ansible -y
 wget https://bootstrap.pypa.io/get-pip.py
 sudo /usr/bin/python2.7 get-pip.py
 rm get-pip.py
+
+# Install psycopg2 (for Ansible postgresql_db)
+sudo pip install psycopg2
