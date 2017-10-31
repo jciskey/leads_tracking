@@ -15,3 +15,9 @@ sudo apt-get update
 # Install Ansible
 # -- Also installs python2.7
 sudo apt-get install ansible -y
+
+# Install Python pip (for installing Python modules)
+# --We install manually because the Ubuntu python-pip package is seriously out of date
+wget https://bootstrap.pypa.io/get-pip.py
+sudo /usr/bin/python2.7 get-pip.py
+rm get-pip.py
