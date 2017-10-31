@@ -6,10 +6,16 @@
 #
 certifi==2017.7.27.1      # via requests
 chardet==3.0.4            # via requests
+decorator==4.1.2          # via sqlalchemy-migrate
 idna==2.6                 # via requests
+pbr==3.1.1                # via sqlalchemy-migrate
 praw==5.2.0
 prawcore==0.12.0          # via praw
-psycopg2==2.7.3.2
 requests==2.18.4          # via prawcore, update-checker
+six==1.11.0               # via sqlalchemy-migrate
+sqlalchemy-migrate==0.11.0
+sqlalchemy==1.1.14
+sqlparse==0.2.4           # via sqlalchemy-migrate
+tempita==0.5.2            # via sqlalchemy-migrate
 update-checker==0.16      # via praw
 urllib3==1.22             # via requests

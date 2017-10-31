@@ -1,3 +1,6 @@
+# General database usage
+SQLAlchemy
+sqlalchemy-migrate
+
 # Used by the reddit scraper
 praw
-psycopg2
