@@ -1,6 +1,8 @@
-# General database usage
-SQLAlchemy
-sqlalchemy-migrate
+# General usage
+virtualenvwrapper
+
+# Database usage
+django
 
 # Used by the reddit scraper
 praw
