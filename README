@@ -7,10 +7,11 @@ them in a local database, and present them to a user for review.
 Dependencies
 ------------
 
-```praw
-psycopg2```
+
 
 License
 -------
 
 MIT
+
+Significant portions of this project are derived from the [ansible-django](https://github.com/technivore/ansible-django) project by Matthew R.
