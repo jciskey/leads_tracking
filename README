@@ -4,9 +4,15 @@ Leads Tracking
 A simple tool to scrape leads from various websites, store
 them in a local database, and present them to a user for review.
 
-Dependencies
+Installation
 ------------
 
+```
+git clone --depth 1 https://github.com/jciskey/leads_tracking.git
+bash leads_tracking/setup/ubuntu-xenial-setup.sh
+cd leads_tracking/setup/ansible
+ansible-playbook -i hosts provision.yml
+```
 
 
 License
