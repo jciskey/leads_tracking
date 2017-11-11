@@ -6,9 +6,9 @@ stop on runlevel [!2345]
 respawn
 setuid www-data
 setgid www-data
-chdir {{ django_project_path }}
+chdir {{ display_project_root }}
 
-env PYTHONPATH={{ django_project_path }}:{{ pythonpath }}
+env PYTHONPATH={{ display_project_root }}:{{ pythonpath }}
 
 exec /usr/bin/gunicorn --workers 3 --bind 127.0.0.1:8000 {{ wsgi_module }}:application
 
