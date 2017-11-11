@@ -35,7 +35,7 @@ ansible_code_path: "{{ project_checkout_path }}/setup/ansible"
 wsgi_module: leads_tracking_display.wsgi
 
 # any directories that need to be added to the PYTHONPATH.
-pythonpath: "{{ django_project_path }}/hello/apps"
+pythonpath: "{{ django_app_path }}"
 
 # the git repository URL for the project
 project_repo: https://github.com/jciskey/leads_tracking.git
